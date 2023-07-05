@@ -1,0 +1,195 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #555;
+}
+
+.screen {
+    background-color:#333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.server-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+}
+
+.server-list th,
+.server-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.server-list th:first-child,
+.server-list td:first-child {
+    width: 50%;
+}
+
+.server-list th:last-child,
+.server-list td:last-child {
+    width: 25%;
+}
+
+.status-green {
+    color: #fff;
+    background-color: #00cc00;
+}
+
+.status-red {
+    color: #fff;
+    background-color: #cc0000;
+}
+
+.status-yellow {
+    color: #000;
+    background-color: #ffff00;
+}
+
+.status-purple {
+    color: #fff;
+    background-color: #993399;
+}
+
+.service-list p {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+}
+
+.table-container th,
+.table-container td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #222;
+}
+
+.table-container tbody td:first-child {
+    background-color: #f39c12; /* Cor laranja para incidentes */
+    color: white;
+}
+
+.table-container tbody td:last-child {
+    background-color: #3498db; /* Cor azul para solicitações */
+    color: white;
+}
+
+.link-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.status-green {
+    background-color: #28a745;
+}
+
+.status-red {
+    background-color: #dc3545;
+}
+
+.status-yellow {
+    background-color: #ffc107;
+}
+
+.status-purple {
+    background-color: #6f42c1;
+}
+
+/* Restante do CSS */
+
+.server-list th,
+.server-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.server-list th:first-child,
+.server-list td:first-child {
+    width: 50%;
+}
+
+.server-list th:last-child,
+.server-list td:last-child {
+    width: 25%;
+}
+
+.status-green {
+    color: #fff;
+    background-color: #00cc00;
+}
+
+.status-red {
+    color: #fff;
+    background-color: #cc0000;
+}
+
+.status-yellow {
+    color: #000;
+    background-color: #ffff00;
+}
+
+.status-purple {
+    color: #fff;
+    background-color: #993399;
+}
+
+.timer {
+    position: absolute;
+    top: 25px;
+    left: calc(100% - 120px);
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+

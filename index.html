@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Monitoramento</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link" onclick="showScreen('status')">Status</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" onclick="showScreen('servers')">Servidores</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" onclick="showScreen('services')">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" onclick="showScreen('links')">Links</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="timer" class="timer"></div>
+
+    </header>
+    
+    <div id="status" class="screen">
+        <h2>Status dos Servidores</h2>
+        <div class="server-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Server 1</td>
+                        <td class="status-green">Online</td>
+                    </tr>
+                    <tr>
+                        <td>Server 2</td>
+                        <td class="status-red">Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Server 3</td>
+                        <td class="status-yellow">Em Aviso</td>
+                    </tr>
+                    <tr>
+                        <td>Server 4</td>
+                        <td class="status-purple">Espaço Cheio</td>
+                    </tr>
+                    <tr>
+                        <td>Server 1</td>
+                        <td class="status-green">Online</td>
+                    </tr>
+                    <tr>
+                        <td>Server 2</td>
+                        <td class="status-red">Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Server 3</td>
+                        <td class="status-yellow">Em Aviso</td>
+                    </tr>
+                    <tr>
+                        <td>Server 4</td>
+                        <td class="status-purple">Espaço Cheio</td>
+                    </tr>
+                    <tr>
+                        <td>Server 1</td>
+                        <td class="status-green">Online</td>
+                    </tr>
+                    <tr>
+                        <td>Server 2</td>
+                        <td class="status-red">Offline</td>
+                    </tr>
+                    <tr>
+                        <td>Server 3</td>
+                        <td class="status-yellow">Em Aviso</td>
+                    </tr>
+                    <tr>
+                        <td>Server 4</td>
+                        <td class="status-purple">Espaço Cheio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <canvas id="serverChart"></canvas>
+    </div>
+
+    <div id="servers" class="screen">
+        <h2>Lista de Servidores</h2>
+        <div class="server-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Lista de servidores será preenchida dinamicamente com JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="services" class="screen">
+        <h2>Serviços</h2>
+        <div class="service-list">
+            <div class="table-container">
+                <h3>Solicitações</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="requestTable">
+                        <!-- Dados da tabela de solicitações serão preenchidos dinamicamente com JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-container">
+                <h3>Incidentes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="incidentTable">
+                        <!-- Dados da tabela de incidentes serão preenchidos dinamicamente com JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div id="links" class="screen">
+        <h2>Links</h2>
+        <div class="link-list">
+            <!-- Conteúdo da lista de links será preenchido dinamicamente com JavaScript -->
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
